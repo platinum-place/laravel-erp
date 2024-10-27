@@ -1,6 +1,7 @@
 <?php
 
-namespace Modules\Authentication\app\Providers;
+
+namespace modules\Sales\app\Providers\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -20,12 +21,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::prefix('authentication/api')
+        Route::prefix('sales/api')
             ->middleware('api')
-            ->group(__DIR__.'/../../routes/api.php');
-
-        Route::prefix('authentication')
-            ->middleware('web')
-            ->group(__DIR__.'/../../routes/web.php');
+            ->group(__DIR__ . '/../../routes/api.php');
     }
 }

@@ -23,13 +23,6 @@ class AdminUserSeeder extends Seeder
             ]);
 
             $user->assignRole(RoleEnum::admin->value);
-
-            $client = Client::factory()->create([
-                'name' => 'Admin',
-                'personal_access_client' => false,
-                'password_client' => false,
-                'revoked' => false,
-            ]);
         });
     }
 }
