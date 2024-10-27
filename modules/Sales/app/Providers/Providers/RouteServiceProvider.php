@@ -1,6 +1,5 @@
 <?php
 
-
 namespace modules\Sales\app\Providers\Providers;
 
 use Illuminate\Support\Facades\Route;
@@ -23,6 +22,6 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('sales/api')
             ->middleware('api')
-            ->group(__DIR__ . '/../../routes/api.php');
+            ->group(__DIR__.'/../../routes/api.php');
     }
 }
