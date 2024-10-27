@@ -19,7 +19,7 @@ class ProductTypeSeeder extends Seeder
             ProductType::updateOrCreate([
                 'id' => $enum->value,
             ], [
-                'name' => $enum->getLabel(),
+                'name' => $enum->getLabel('suppliers::enums'),
             ]);
         }
     }

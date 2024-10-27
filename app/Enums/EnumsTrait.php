@@ -16,11 +16,11 @@ trait EnumsTrait
         return Arr::pluck(static::cases(), 'name');
     }
 
-    public function getLabel(): ?string
+    public function getLabel(string $src = ''): ?string
     {
         $label = is_string(value: $this->value) ? $this->value : $this->name;
 
-        return __($label);
+        return $src ? __("$src.$label") : __($label);
     }
 
     public static function get($value): self

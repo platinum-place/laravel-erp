@@ -3,6 +3,7 @@
 namespace modules\Suppliers\app\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Lang;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -11,7 +12,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->register(\Modules\Authentication\app\Providers\RouteServiceProvider::class);
+        $this->app->register(RouteServiceProvider::class);
+
     }
 
     /**
@@ -20,5 +22,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->loadMigrationsFrom(__DIR__.'/../../database/migrations');
+
+        $this->loadTranslationsFrom(__DIR__.'/../../lang', 'suppliers');
     }
 }
