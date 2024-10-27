@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\Purchasing\app\Providers\Providers;
+namespace modules\Accounting\app\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

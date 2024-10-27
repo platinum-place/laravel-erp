@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\Purchasing\app\Providers\Providers;
+namespace modules\Sales\app\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -20,7 +20,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::prefix('purchasing/api')
+        Route::prefix('sales/api')
             ->middleware('api')
             ->group(__DIR__.'/../../routes/api.php');
     }

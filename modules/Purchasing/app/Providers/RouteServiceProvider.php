@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\Currencies\app\Providers\Providers;
+namespace modules\Purchasing\app\Providers;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
@@ -20,7 +20,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Route::prefix('currencies/api')
+        Route::prefix('purchasing/api')
             ->middleware('api')
             ->group(__DIR__.'/../../routes/api.php');
     }

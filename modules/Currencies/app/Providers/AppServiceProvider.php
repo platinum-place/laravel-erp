@@ -1,6 +1,6 @@
 <?php
 
-namespace modules\Billing\app\Providers\Providers;
+namespace modules\Currencies\app\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
