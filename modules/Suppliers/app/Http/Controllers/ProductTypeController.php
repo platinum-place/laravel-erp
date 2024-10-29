@@ -4,8 +4,6 @@ namespace Modules\Suppliers\app\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Modules\Authentication\app\Http\Resources\ClientResource;
-use Modules\Authentication\app\Services\ClientService;
 use Modules\Suppliers\app\Http\Resources\ProductTypeResource;
 use Modules\Suppliers\app\Services\ProductTypeService;
 

@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('agents', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->softDeletes();
+            $table->string('name');
+            $table->string('phone')->nullable();
+            $table->foreignIdFor(\Modules\Suppliers\app\Models\Vendor::class)->constrained()->cascadeOnDelete();
         });
     }
 

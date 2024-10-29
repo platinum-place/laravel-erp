@@ -2,9 +2,11 @@
 
 namespace Modules\Suppliers\app\Models;
 
-use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
 
-class Agent extends Model
+class Agent extends BaseModel
 {
-    //
+    protected $fillable = [
+        'name', 'phone', 'vendor_id',
+    ];
 }

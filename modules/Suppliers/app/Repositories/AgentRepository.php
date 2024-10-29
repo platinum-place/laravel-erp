@@ -3,11 +3,11 @@
 namespace Modules\Suppliers\app\Repositories;
 
 use App\Repositories\BaseRepository;
-use Modules\Suppliers\app\Models\Vendor;
+use Modules\Suppliers\app\Models\Agent;
 
-class VendorRepository extends BaseRepository
+class AgentRepository extends BaseRepository
 {
-    public function __construct(Vendor $model)
+    public function __construct(Agent $model)
     {
         $this->model = $model;
     }

@@ -3,8 +3,6 @@
 namespace Modules\Suppliers\app\Services;
 
 use App\Services\BaseService;
-use Modules\Authentication\app\Repositories\ClientRepository;
-use Modules\Suppliers\app\Repositories\ProductTypeRepository;
 use Modules\Suppliers\app\Repositories\VendorRepository;
 
 class VendorService extends BaseService

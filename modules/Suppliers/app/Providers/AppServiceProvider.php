@@ -3,7 +3,6 @@
 namespace modules\Suppliers\app\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Lang;
 
 class AppServiceProvider extends ServiceProvider
 {

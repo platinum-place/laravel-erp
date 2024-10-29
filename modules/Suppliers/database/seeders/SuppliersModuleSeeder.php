@@ -3,8 +3,6 @@
 namespace Modules\Suppliers\database\seeders;
 
 use Illuminate\Database\Seeder;
-use Modules\Authentication\database\seeders\PermissionSeeder;
-use Modules\Authentication\database\seeders\RoleSeeder;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
