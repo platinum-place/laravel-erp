@@ -6,11 +6,11 @@ use App\Repositories\BaseRepository;
 use App\Services\BaseService;
 use Modules\Authentication\app\Models\User;
 use Modules\Suppliers\app\Models\ProductType;
-use Modules\Suppliers\app\Models\Supplier;
+use Modules\Suppliers\app\Models\Vendor;
 
-class SupplierRepository extends BaseRepository
+class VendorRepository extends BaseRepository
 {
-    public function __construct(Supplier $model)
+    public function __construct(Vendor $model)
     {
         $this->model = $model;
     }

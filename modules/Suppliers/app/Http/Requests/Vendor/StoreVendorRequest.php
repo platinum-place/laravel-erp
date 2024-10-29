@@ -1,11 +1,11 @@
 <?php
 
-namespace Modules\Suppliers\app\Http\Requests\Supplier;
+namespace Modules\Suppliers\app\Http\Requests\Vendor;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Validation\Rule;
 
-class UpdateSupplierRequest extends FormRequest
+class StoreVendorRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -25,7 +25,7 @@ class UpdateSupplierRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'max:255'],
             'phone' => ['required', 'string', 'max:255'],
-            'identification' => ['required', 'string', 'max:255', Rule::unique('suppliers', 'identification')->ignore($this->id)],
+            'identification' => ['required', 'string', 'max:255', Rule::unique('suppliers', 'identification')],
         ];
     }
 }

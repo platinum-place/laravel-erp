@@ -6,11 +6,11 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Modules\Authentication\app\Models\User;
-use Modules\Suppliers\app\Models\Supplier;
+use Modules\Suppliers\app\Models\Vendor;
 
-class SupplierFactory extends Factory
+class VendorFactory extends Factory
 {
-    protected $model = Supplier::class;
+    protected $model = Vendor::class;
 
     /**
      * Define the model's default state.
